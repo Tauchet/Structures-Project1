@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="busqueda-caja" stylesheets="@../../estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox id="opciones" alignment="CENTER_LEFT" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="direccion" text="proceso / adios /" textFill="#0d69dc">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Label>
+            <Label id="entidad" text="Label" textFill="#0f4f9e">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Label id="descripcion" text="Label" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+   </center>
+   <right>
+      <Label text="Más Información" textFill="#5a5a5a" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="#5a5a5a" glyphName="EXTERNAL_LINK" size="18" />
+         </graphic>
+      </Label>
+   </right>
+</BorderPane>

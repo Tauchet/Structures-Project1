@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane onMousePressed="#abrir" styleClass="activity-box" stylesheets="@../../../estilos.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <BorderPane BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+         <top>
+            <Label id="titulo" fx:id="nombre" alignment="TOP_LEFT" contentDisplay="RIGHT" text="Actividad" textFill="#333333" BorderPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Label>
+         </top>
+         <bottom>
+            <Label fx:id="id" text="Label" BorderPane.alignment="CENTER_LEFT">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </top>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <bottom>
+      <HBox spacing="15.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <FontAwesomeIconView fill="#757373" glyphName="LIST_ALT" size="16" />
+                  <Label text="Actividades" textFill="#757373">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cantidadActividades" layoutX="26.0" layoutY="10.0" text="10" textFill="#6b6b6b">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" spacing="5.0">
+               <children>
+                  <FontAwesomeIconView fill="#757373" glyphName="CLOCK_ALT" size="16" />
+                  <Label text="Duración:" textFill="#757373">
+                     <font>
+                        <Font name="Calibri Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="duracion" layoutX="26.0" layoutY="10.0" text="De 10 a 50 minutos" textFill="#6b6b6b">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
